@@ -154,14 +154,16 @@ function getBody(content)
    return content.slice(x + 1, y);
 } 
 $(document).ready(function(){
-	$.get(durl, function(content){
-		$("#ol-container").show();
-		$("#home").hide();
-		$("#ol-container").width($(window).width());
-		$("#ol-container").height($(window).height());
-		$("#ol-container iframe").width($(window).width());
-		$("#ol-container iframe").height($(window).height());
-	});
+	if (navigator.network.connection.type != Connection.NONE]) {
+		$.get(durl, function(content){
+			$("#ol-container").show();
+			$("#home").hide();
+			$("#ol-container").width($(window).width());
+			$("#ol-container").height($(window).height());
+			$("#ol-container iframe").width($(window).width());
+			$("#ol-container iframe").height($(window).height());
+		});
+	}
 });
 </script>	
 	</head> 
