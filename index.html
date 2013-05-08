@@ -155,7 +155,7 @@ function getBody(content)
 } 
 $(document).ready(function(){
 	if (navigator.network.connection.type != Connection.NONE]) {
-		$.get(durl, function(content){
+		$.get(durl, function(){
 			$("#ol-container").show();
 			$("#home").hide();
 			$("#ol-container").width($(window).width());
