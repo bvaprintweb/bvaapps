@@ -155,6 +155,10 @@ background-size:cover;
 		$("#ol-container iframe").height($(window).height());
 	}
 });*/
+$( document ).bind( "mobileinit", function() {
+    // Make your jQuery Mobile framework configuration changes here!
+    $.mobile.allowCrossDomainPages = true;
+});
 </script>	
 	</head> 
 	<body>
