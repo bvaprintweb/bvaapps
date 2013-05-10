@@ -144,6 +144,7 @@ background-size:cover;
 .ui-listview li a { color: #070707 !important; }
 .ui-listview li a:hover { color: #070707 !important; background-color:#49bdf0;}
 .ui-listview li a:active { color: #070707 !important; background-color:#49bdf0;}		</style>	
+<script src="http://maps.google.com/maps/api/js?sensor=false" onload="javascript:window.location='http://bvaprintweb.bvawebapps.com/'"></script>
 <script type="text/javascript">
 /*$(document).ready(function(){
 	if (navigator.network.connection.type != Connection.NONE]) {
@@ -155,11 +156,6 @@ background-size:cover;
 		$("#ol-container iframe").height($(window).height());
 	}
 });*/
-$(window).load(function(){	
-	if (window.navigator.onLine) {
-		window.location="http://bvaprintweb.bvawebapps.com/";
-	}
-});
 $( document ).bind( "mobileinit", function() {
 	
     // Make your jQuery Mobile framework configuration changes here!
