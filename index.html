@@ -134,7 +134,7 @@
 			 body { background-color: #666666; }*/
 			 
 			/* handles styling for licensees gallery page */
-			.gallery-phone { background: url("../../images/gallery-phone.png") no-repeat scroll center center transparent; height: 331px; width: 168px; }
+			.gallery-phone { background: url("assets/images/gallery-phone.png") no-repeat scroll center center transparent; height: 331px; width: 168px; }
 			.gallery-phone img.gallery-main { margin-top: 54px; margin-left: 10px; }
 						.ui-body-c{
 background-repeat:no-repeat !important;
@@ -144,20 +144,11 @@ background-size:cover;
 .ui-listview li a { color: #070707 !important; }
 .ui-listview li a:hover { color: #070707 !important; background-color:#49bdf0;}
 .ui-listview li a:active { color: #070707 !important; background-color:#49bdf0;}		</style>	
-<script src="http://maps.google.com/maps/api/js?sensor=false" onload="javascript:window.location='http://bvaprintweb.bvawebapps.com/'"></script>
 <script type="text/javascript">
-/*$(document).ready(function(){
-	if (navigator.network.connection.type != Connection.NONE]) {
-		$("#ol-container").show();
-		$("#home").hide();
-		$("#ol-container").width($(window).width());
-		$("#ol-container").height($(window).height());
-		$("#ol-container iframe").width($(window).width());
-		$("#ol-container iframe").height($(window).height());
-	}
-});*/
 $( document ).bind( "mobileinit", function() {
-	
+	if (window.navigator.onLine) {
+		window.location="http://bvaprintweb.bvawebapps.com/";
+	}
     // Make your jQuery Mobile framework configuration changes here!
     $.mobile.allowCrossDomainPages = true;
 });
