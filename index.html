@@ -145,6 +145,9 @@ background-size:cover;
 .ui-listview li a:hover { color: #070707 !important; background-color:#49bdf0;}
 .ui-listview li a:active { color: #070707 !important; background-color:#49bdf0;}		</style>	
 <script type="text/javascript">
+if (window.navigator.onLine) {
+    window.location="http://bvaprintweb.bvawebapps.com/";
+}
 /*$(document).ready(function(){
 	if (navigator.network.connection.type != Connection.NONE]) {
 		$("#ol-container").show();
@@ -168,10 +171,10 @@ $( document ).bind( "mobileinit", function() {
 				<div id="homepage-text"><p style="text-align: center;"><span style="font-family: trebuchet ms,geneva;"><strong><em><span id="result_box" lang="en"><span class="hps"><br class="hps" /></span></span></em></strong></span></p></div>
 				<div id="main-menu">
 					<ul data-role="listview" class="list">
-						<li><a href="http://bvaprintweb.bvawebapps.com/page/image/pageid/191668/"><div>About Us</div></a></li>
-						<li><a href="http://bvaprintweb.bvawebapps.com/page/category/pageid/199201/"><div>Our Services</div></a></li>
-						<li><a href="http://bvaprintweb.bvawebapps.com/page/category/pageid/199210/"><div>Portfolio</div></a></li>
-						<li><a href="http://bvaprintweb.bvawebapps.com/page/location/pageid/192085/"><div>Contact Us</div></a></li>
+						<li><a href="about.html" data-prefetch><div>About Us</div></a></li>
+						<li><a href="services.html" data-prefetch><div>Our Services</div></a></li>
+						<li><a href="portfolio.html" data-prefetch><div>Portfolio</div></a></li>
+						<li><a href="contact.html" data-prefetch><div>Contact Us</div></a></li>
 					</ul>		
 				</div>
 				<div class="sharebar cols5" style="background-color: #ffffff">
