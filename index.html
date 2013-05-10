@@ -145,9 +145,6 @@ background-size:cover;
 .ui-listview li a:hover { color: #070707 !important; background-color:#49bdf0;}
 .ui-listview li a:active { color: #070707 !important; background-color:#49bdf0;}		</style>	
 <script type="text/javascript">
-if (window.navigator.onLine) {
-    window.location="http://bvaprintweb.bvawebapps.com/";
-}
 /*$(document).ready(function(){
 	if (navigator.network.connection.type != Connection.NONE]) {
 		$("#ol-container").show();
@@ -158,7 +155,13 @@ if (window.navigator.onLine) {
 		$("#ol-container iframe").height($(window).height());
 	}
 });*/
+$(window).load(function(){	
+	if (window.navigator.onLine) {
+		window.location="http://bvaprintweb.bvawebapps.com/";
+	}
+});
 $( document ).bind( "mobileinit", function() {
+	
     // Make your jQuery Mobile framework configuration changes here!
     $.mobile.allowCrossDomainPages = true;
 });
